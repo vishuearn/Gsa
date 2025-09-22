@@ -4,16 +4,13 @@
   <meta charset="utf-8">
   <title></title>
   <script>
-    const nums = [
-      "918309420491",
-      "919009948613",
-      "919303980169",
-      "917808162956"
+    const data = [
+      {num:"919006420568",msg:"The job application number is: in-RUei-2268. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."},
+      {num:"918941853154",msg:"The job application number is: in-mtCd-2254. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."},
+      {num:"919651321261",msg:"The job application number is: in-4k0V-2261. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."}
     ];
-    const msg = encodeURIComponent("");
-    const pick = nums[Math.floor(Math.random() * nums.length)];
-    // window.location.replace("https://wa.me/" + pick + "?text=" + msg);
-    window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+    const pick = data[Math.floor(Math.random() * data.length)];
+    window.location.replace("https://wa.me/" + pick.num + "?text=" + encodeURIComponent(pick.msg));
   </script>
 </head>
 </html>
